@@ -25,12 +25,14 @@ import {
 } from "react-icons/si";
 import { LuFileJson } from "react-icons/lu";
 import { FaGitAlt } from "react-icons/fa";
+import { PiFileSql } from "react-icons/pi";
+
 import "./styles/Technologies.css";
 
 const Technologies = () => {
   return (
     <section className="technologies">
-      <h2>Technologies</h2>
+      <h2>Skills/Technologies</h2>
       <div className="tech-grid">
         <div className="tech-item">
           <FaJava /> Java
@@ -48,7 +50,7 @@ const Technologies = () => {
           <SiSwift /> Swift
         </div>
         <div className="tech-item">
-          <SiPostgresql /> SQL
+          <PiFileSql /> SQL
         </div>
         <div className="tech-item">
           <FaReact /> React

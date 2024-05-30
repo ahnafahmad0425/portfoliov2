@@ -7,7 +7,7 @@ const Interest = () => {
       <h2>Current Interests</h2>
       <ul>
         <li>iOS Application Development</li>
-        <li>AI / Machine learning & Data Science</li>
+        <li>AI / Machine Learning & Data Science</li>
         <li>Full Stack Web Development</li>
       </ul>
     </section>
