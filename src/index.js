@@ -3,21 +3,18 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-// Create a full-screen container for ripples
 const rippleContainer = document.createElement("div");
 rippleContainer.classList.add("ripple-container");
 document.body.appendChild(rippleContainer);
 
-// Function to create ripples with random border size
 const createRipple = () => {
   const ripple = document.createElement("div");
   ripple.classList.add("ripple");
 
-  // Generate random size, position, and border width
-  const size = Math.random() * 50 + 50; // Size between 50 and 100px
+  const size = Math.random() * 50 + 50;
   const posX = Math.random() * window.innerWidth;
-  const posY = Math.random() * document.documentElement.scrollHeight; // Full page height
-  const borderWidth = Math.random() * 2 + 1; // Border width between 1 and 3px
+  const posY = Math.random() * document.documentElement.scrollHeight;
+  const borderWidth = Math.random() * 2 + 1;
 
   ripple.style.width = `${size}px`;
   ripple.style.height = `${size}px`;
@@ -27,14 +24,12 @@ const createRipple = () => {
 
   rippleContainer.appendChild(ripple);
 
-  // Remove ripple after animation
   setTimeout(() => {
     ripple.remove();
-  }, 2000); // Adjust this to match the animation duration
+  }, 2000);
 };
 
-// Generate ripples at intervals
-setInterval(createRipple, 150); // Adjust this to change frequency of ripples
+setInterval(createRipple, 150);
 
 ReactDOM.render(
   <React.StrictMode>

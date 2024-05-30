@@ -7,6 +7,7 @@ import {
   FaAws,
   FaDocker,
   FaLinux,
+  FaAngular,
 } from "react-icons/fa";
 import {
   SiCplusplus,
@@ -22,6 +23,8 @@ import {
   SiTypescript,
   SiMysql,
 } from "react-icons/si";
+import { LuFileJson } from "react-icons/lu";
+import { FaGitAlt } from "react-icons/fa";
 import "./styles/Technologies.css";
 
 const Technologies = () => {
@@ -63,6 +66,9 @@ const Technologies = () => {
           <FaNodeJs /> NodeJS
         </div>
         <div className="tech-item">
+          <FaAngular /> Angular
+        </div>
+        <div className="tech-item">
           <SiMysql /> MySQL
         </div>
         <div className="tech-item">
@@ -85,6 +91,12 @@ const Technologies = () => {
         </div>
         <div className="tech-item">
           <FaDocker /> Docker
+        </div>
+        <div className="tech-item">
+          <LuFileJson /> JSON
+        </div>
+        <div className="tech-item">
+          <FaGitAlt /> Git
         </div>
         <div className="tech-item">
           <FaLinux /> Linux
