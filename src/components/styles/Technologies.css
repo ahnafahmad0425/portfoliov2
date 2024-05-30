@@ -1,0 +1,23 @@
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    gap: 1px; /* Adjust spacing as needed */
+  }
+  
+  .tech-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px; /* Adjust spacing as needed */
+  }
+  
+  .tech-item svg {
+    margin-right: 5px; /* Adjust space between icon and text */
+  }
+
+  @media (max-width: 767px) {
+  
+    .tech-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+  }

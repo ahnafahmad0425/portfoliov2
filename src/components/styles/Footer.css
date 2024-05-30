@@ -1,0 +1,27 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer a {
+    color: #ffffff; /* White font color */
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-links a {
+    color: #ffffff; /* White font color */
+    margin: 0 10px;
+    text-decoration: none;
+  }

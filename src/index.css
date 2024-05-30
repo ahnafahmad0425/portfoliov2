@@ -1,13 +1,84 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #050a10;
+    color: #fff;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  body::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background for the track */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent thumb */
+    border-radius: 6px; /* Rounded corners */
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5); /* Slightly more opaque on hover */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 50px;
+    position: relative; /* Ensure container is positioned relative */
+    z-index: 1;
+  }
+  
+  .header, .experience, .technologies, .hobbies, .footer {
+    padding: 20px;
+  }
+  
+  .experience-item, .tech-item {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 767px) {
+  
+  }
+  
+  /* Ripple container */
+  .ripple-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0; /* Ensure container is below other content */
+  }
+  
+  /* Ripple effect */
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgb(127, 222, 254); /* Bright white border */
+    background: transparent; /* Transparent background */
+    pointer-events: none;
+    animation: ripple-animation 2s ease-out;
+    transform: scale(0);
+    opacity: 1;
+  }
+  
+  @keyframes ripple-animation {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,43 @@
+.header h1 {
+  text-align: left; /* Align text to the left */
+  font-weight: bold; /* Ensure the heading is bold */
+}
+
+.header p {
+  text-align: left; /* Align text to the left */
+  font-weight: 400; /* Set font weight to normal (less bold) */
+}
+
+.header a {
+  color: #ffffff; /* White font color */
+  text-decoration: none;
+}
+
+.name {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(14), cursor 0.2s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .header{
+    margin-top: 40px;
+  }
+
+  .name{
+    font-size: 25px;
+  }
+}
