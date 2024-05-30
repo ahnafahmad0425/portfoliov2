@@ -1,15 +1,15 @@
 .header h1 {
-  text-align: left; /* Align text to the left */
-  font-weight: bold; /* Ensure the heading is bold */
+  text-align: left; 
+  font-weight: bold; 
 }
 
 .header p {
-  text-align: left; /* Align text to the left */
-  font-weight: 400; /* Set font weight to normal (less bold) */
+  text-align: left; 
+  font-weight: 400; 
 }
 
 .header a {
-  color: #ffffff; /* White font color */
+  color: #ffffff; 
   text-decoration: none;
 }
 

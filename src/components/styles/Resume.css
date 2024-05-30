@@ -7,7 +7,7 @@
   }
   
   .resume a {
-    color: hsl(187, 73%, 42%); /* Green color for the link */
+    color: hsl(187, 73%, 42%); 
     text-decoration: none;
     font-weight: bold;
   }

@@ -1,7 +1,7 @@
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns for large screens */
-  gap: 20px; /* Add gap between items */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   margin: 20px 0;
 }
 
@@ -9,28 +9,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px; /* Set a fixed height for the buttons */
+  height: 100px; 
   text-align: center;
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 1); /* Bright white border */
+  border: 1px solid rgba(255, 255, 255, 1); 
   border-radius: 4px;
-  color: #ffffff; /* White font color */
-  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin: 5px; /* Add margin to create space between buttons */
+  margin: 5px; 
 }
 
 .project-button:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* More opaque white on hover */
-  color: #121212; /* Dark font color on hover */
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: #121212; 
 }
 
 @media (max-width: 767px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* One column for small screens */
+    grid-template-columns: 1fr; 
   }
 
   .project-button {
-    padding: 1rem 1rem; /* Adjust padding for smaller screens */
+    padding: 1rem 1rem; 
   }
 }
